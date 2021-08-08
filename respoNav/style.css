@@ -1,7 +1,11 @@
+* {
+  box-sizing: border-box;
+}
 body {
   margin: 0;
   font-family: "Ubuntu", sans-serif;
 }
+
 header {
   text-align: center;
   background-color: #f8f8f8;
@@ -11,21 +15,10 @@ header {
   max-width: 900px;
   width: 100%;
   margin: 0 auto;
-  border: 1px solid red;
   display: flex;
   justify-content: space-between;
 }
-@media screen and (max-width: 675px) {
-  #container {
-    flex-direction: column;
-  }
-  #nav-list {
-    flex-direction: column;
-  }
-  #nav-list li {
-    margin-bottom: 1em;
-  }
-}
+
 /*=================
 Typography
 =================*/
@@ -71,4 +64,132 @@ Navigation
 .current-page:hover,
 .current-page:focus {
   color: #707070;
+}
+
+#content {
+  max-width: 932px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+#main-content {
+  width: 69%;
+}
+p {
+  color: #707070;
+  font-size: 1.125rem;
+  font-weight: 300;
+  line-height: 1.6;
+}
+#big-img {
+  margin: 1em 0;
+}
+#big-img img {
+  width: 100%;
+}
+figcaption {
+  margin: 1em 0;
+  font-size: 0.75rem;
+}
+#content {
+  display: flex;
+  justify-content: space-between;
+}
+#main-content h2 {
+  color: #143774;
+  font-family: "Lora";
+  font-weight: 400;
+  margin-top: 0;
+}
+#main-content a {
+  color: #1792d2;
+}
+.continue-link {
+  font-weight: bold;
+  text-decoration: none;
+  padding: 1em 0;
+}
+
+.art {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin: 2em 0;
+}
+.art figure {
+  margin: 0;
+  width: 30%;
+}
+.art figure img {
+  width: 100%;
+  min-height: 250px;
+  object-fit: cover;
+}
+.description {
+  width: 68%;
+}
+
+aside {
+  margin-top: 1em;
+  width: 30%;
+}
+aside img {
+  width: 100%;
+}
+#sideContent {
+  width: 30%;
+}
+.mini-post {
+  margin-bottom: 2em;
+  background-color: #f8f8f8;
+  padding: 1em;
+}
+
+.mini-post h4 {
+  margin-top: 0;
+  color: #143774;
+  letter-spacing: 2px;
+}
+
+.box-mini-post {
+  padding: 1em;
+  background-color: white;
+}
+.box-mini-post img {
+  width: 100%;
+}
+.mini-post h5 {
+  margin: 0.5em 0;
+  color: #143774;
+  font-weight: 300;
+  font-size: 1.3rem;
+}
+footer {
+  background: #143774;
+  color: white;
+  text-align: center;
+  padding: 3em 0;
+}
+footer p {
+  color: white;
+}
+@media screen and (max-width: 675px) {
+  #container {
+    flex-direction: column;
+  }
+  #nav-list {
+    flex-direction: column;
+  }
+  #nav-list li {
+    margin-bottom: 1em;
+  }
+  #content {
+    flex-direction: column;
+  }
+  #main-content {
+    width: 98%;
+  }
+  #sideContent {
+    width: 98%;
+  }
 }
