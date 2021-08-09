@@ -164,6 +164,11 @@ aside img {
   font-weight: 300;
   font-size: 1.3rem;
 }
+#main-content h3 {
+  font-size: 1.54rem;
+  color: #1792d2;
+  font-weight: 400;
+}
 footer {
   background: #143774;
   color: white;
